@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-image: url(netflixb.jpg);
+    height: 700px;
+    border-bottom: 10px solid rgb(61, 61, 61);
+    letter-spacing: 1px;
+    
+}
+.navbar,img{
+    height: 100px;
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+     align-items: center;
+}
+.navbar{
+    padding-left: 60px;
+}
+.main{
+   height: 550px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    text-align: center;
+}
+.lan{
+    display: flex;
+}
+ select{
+    width:max-content;
+    background-color: rgb(56, 55, 55);
+    color: aliceblue;
+    border-radius: 5px;
+    padding-left: 10px;
+     width: 100px;
+}
+.lan button{
+   margin: 0 100px 0 50px;
+   background-color: rgb(222, 5, 5);
+   color: white;
+   border-radius: 5px;
+   border: none;
+   height: 35px;
+   width: 100px;
+}
+
+.main pre{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5em;
+   font: bold;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main p{
+    color: white;
+    font-family: sans-serif ;
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+input,button{
+    margin-top: 20px;
+    height: 50px;
+    background-color: rgba(8, 8, 8, 0.356);
+    margin: 5px;
+
+}
+.inp button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    background-color: rgb(225, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 250px;
+}
+#email{
+    width: 400px;
+    padding: 5px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.401);
+    border-radius: 5px;
+    font-size: larger;
+    color: aliceblue;
+}
+
+button:hover{
+    background-color: rgb(168, 3, 3);
+    cursor: pointer;
+}
+.page,.page2,.page3,.page4,.page6{
+    background-color: black;
+    height: 700px;
+    color: white;
+    display: flex;
+    border-bottom: 10px solid rgb(61, 61, 61);
+}
+
+.text,.text2,.text3,.text4{
+    width:700px ;
+    display: flex;
+    letter-spacing: 2px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: x-large;
+}
+.text{
+    padding-left: 80px;
+}
+.text2{
+    padding-right: 80px; 
+}
+.text3{
+    padding-left: 80px;
+}
+.text4{
+    padding-right: 80px;
+}
+
+.page img,.page2 img,.page3 img,.page4 img{
+    width: 450px;
+    height: 300px;
+    margin: auto;
+}
+.page img{
+    background: url(img4.jpg) no-repeat;
+    background-position: 75px 50px;
+}
+
+.page3 img{
+    background:url(img6.jpg) no-repeat ;
+    background-position: 75px 29px;
+}
+.page5{
+    background-color: black;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: fit-content;
+    border-bottom: 10px #303030 ;
+}
+.page5 h1{
+    color: azure;
+    text-align: center;
+    font-weight: 500;
+    padding: 50px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+li{
+    color: rgb(251, 252, 252);
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+}
+.faq label{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size:20px;
+    font-weight: 500;
+    background: #303030;
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: rotate 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.faq .content{
+    background: #303030;
+    text-align: left;
+    overflow: hidden;
+   padding:0 20px;
+   max-height: 0;
+   transition: max-height 0.5s ,padding 0.5s;
+}
+.faq input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.faq input[type="radio"]:checked + label + .content{
+     min-height: 0px;
+}
+.faq input[type="radio"]:checked + label::after{
+    rotate: 45deg;
+}
+small{
+    color: white;
+    font-size: large;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+.page6{
+    border-top: 10px solid #303030;
+    display: flex;
+    flex-direction: column;
+    color: #828181;
+    height: fit-content;}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.page6 li{
+    letter-spacing: 1px;
+    padding: 5px 20px 5px 0;
+    margin: 4px;
+    color: #828181;
+    
+   font-family: sans-serif;
+}
+.page6 p{
+    margin: 50px;
+    padding-left: 60px;
+    font-size: large;
+    font-family: sans-serif;
+}
+.page6 pre{
+    margin-top: 30px;
+    font: 1em sans-serif;
+    font-size: large;
+}
+
+.page6 a{
+    text-decoration: #6e6b6b;
+}
+
+.page6 li:hover{
+    color: #6e6b6b;
+}
+
+
