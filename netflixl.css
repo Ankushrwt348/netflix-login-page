@@ -3,7 +3,7 @@
     padding: 0;
 }
 .nav{
-    background-image: url(netflixb.jpg);
+    background-image: url(./img/netflixb.jpg);
     height: 700px;
     border-bottom: 10px solid rgb(61, 61, 61);
     letter-spacing: 1px;
@@ -127,12 +127,12 @@ button:hover{
     margin: auto;
 }
 .page img{
-    background: url(img4.jpg) no-repeat;
+    background: url(./img/img4.jpg) no-repeat;
     background-position: 75px 50px;
 }
 
 .page3 img{
-    background:url(img6.jpg) no-repeat ;
+    background:url(./img/img6.jpg) no-repeat ;
     background-position: 75px 29px;
 }
 .page5{
